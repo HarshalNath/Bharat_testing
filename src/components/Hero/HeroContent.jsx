@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 
 const HeroContent = () => {
   return (
@@ -10,9 +10,12 @@ const HeroContent = () => {
         Comprehensive laboratory testing services with state-of-the-art
         facilities and expert analysis.
       </p>
-      <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
-        Get Started
-      </button>
+
+      <Link to={"../../auth/"}>
+        <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
+          Get Started
+        </button>
+      </Link>
     </div>
   );
 };
