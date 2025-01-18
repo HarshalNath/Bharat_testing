@@ -1,5 +1,5 @@
 import React from "react";
-import Whatsapp from "../assets/Whatsapp.png";
+import whatsapp from "../assets/Whatsapp.png";
 
 const WhatsappEnquiry = () => {
   return (
@@ -15,7 +15,7 @@ const WhatsappEnquiry = () => {
             Enquiry Form
           </button>
           <img
-            src={Whatsapp}
+            src={whatsapp}
             alt=""
             width={30}
             height={30}
