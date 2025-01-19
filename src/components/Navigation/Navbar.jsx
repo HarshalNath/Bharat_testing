@@ -12,13 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-b-2">
+    <nav className="border-b-2 sticky top-0 z-10 bg-white">
       <div className="flex justify-between items-center px-2 py-5 md:py-5 max-w-7xl mx-auto">
         <Link to="/">
           <div className="flex items-center">
             <Microscope className="h-8 w-8 text-[#7FC7D9]" />
             <span className="ml-2 text-xl font-semibold text-[#0F1035]">
-              Bharat Testng Labarotary
+              Bharat Testing Labarotary
             </span>
           </div>
         </Link>

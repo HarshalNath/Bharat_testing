@@ -3,7 +3,7 @@ import whatsapp from "../assets/WhatsApp.png";
 
 const WhatsappEnquiry = () => {
   return (
-    <section>
+    <section className="mt-20">
       <div className="flex flex-col items-center gap-7 mb-14 mx-4">
         <h1 className="text-xl ">Testing & Consulting</h1>
         <h1 className="text-3xl tracking-wider">

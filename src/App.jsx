@@ -11,10 +11,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <WhatsappEnquiry />
       <TestingServices />
       <WhyChooseUs />
       <ContactUs />
-      <WhatsappEnquiry />
       <Footer />
     </>
   );
