@@ -45,6 +45,17 @@ const CompaniesLogo = () => {
 
   return (
     <div className="mt-20 mx-10 lg:mt-20 lg:mx-20">
+      <div className="text-center mb-20 flex justify-center items-center flex-col">
+        <h1 className="text-3xl">Trusted by Prominent Clientele</h1>
+        <div
+          className="w-12
+         h-1 bg-green-500 mt-5 mb-4"
+        ></div>
+        <p className="text-xl text-gray-500">
+          More than 1500 projects completed across india
+        </p>
+      </div>
+
       <Slider {...settings}>
         {CompanyImages.map((img) => {
           return (
