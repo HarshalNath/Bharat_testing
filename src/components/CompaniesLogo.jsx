@@ -44,7 +44,7 @@ const CompaniesLogo = () => {
   };
 
   return (
-    <div className="mt-10 mx-10 lg:mt-20 lg:mx-20">
+    <div className="mt-20 mx-10 lg:mt-20 lg:mx-20">
       <Slider {...settings}>
         {CompanyImages.map((img) => {
           return (
