@@ -1,5 +1,27 @@
 import avatar from "../assets/avatar.png";
 
+import c1 from "../assets/c-1.png";
+import c2 from "../assets/c-2.png";
+import c3 from "../assets/c-3.png";
+import c4 from "../assets/c-4.png";
+import c5 from "../assets/c-5.png";
+import c6 from "../assets/c-6.png";
+import c7 from "../assets/c-7.png";
+import c8 from "../assets/c-8.png";
+import c9 from "../assets/c-9.png";
+import c10 from "../assets/c-10.png";
+import c11 from "../assets/c-11.png";
+import c12 from "../assets/c-12.png";
+import c13 from "../assets/c-13.png";
+import c14 from "../assets/c-14.png";
+import c15 from "../assets/c-15.png";
+import c16 from "../assets/c-16.png";
+import c17 from "../assets/c-17.png";
+import c18 from "../assets/c-18.png";
+import c19 from "../assets/c-19.png";
+import c20 from "../assets/c-20.png";
+import c21 from "../assets/c-21.png";
+
 export const LINKS = [
   {
     name: "Services",
@@ -131,4 +153,28 @@ export const CompaniesMains = [
       "More than 4 years of experience in business development activities for Testing of environmental parameters, agriculture & food products, pharmac eutical, ayurvedic product and building materials.",
     image: avatar,
   },
+];
+
+export const CompanyImages = [
+  c1,
+  c2,
+  c3,
+  c4,
+  c5,
+  c6,
+  c7,
+  c8,
+  c9,
+  c10,
+  c11,
+  c12,
+  c13,
+  c14,
+  c15,
+  c16,
+  c17,
+  c18,
+  c19,
+  c20,
+  c21,
 ];

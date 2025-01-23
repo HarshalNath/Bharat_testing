@@ -1,3 +1,4 @@
+import CompaniesLogo from "./components/CompaniesLogo";
 import CompaniesMain from "./components/CompaniesMain";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer/Footer";
@@ -19,6 +20,7 @@ function App() {
       <CompaniesMain />
       <WhyChooseUs />
       <Testimonial />
+      <CompaniesLogo />
       <ContactUs />
       <Footer />
     </>
