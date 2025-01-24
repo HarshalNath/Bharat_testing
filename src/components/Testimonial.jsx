@@ -1,5 +1,4 @@
 import React from "react";
-import WhatApp from "../assets/WhatsApp.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,10 +43,20 @@ const Testimonial = () => {
 
   return (
     <div className="card-list">
+      <div className="flex justify-center items-center flex-col">
+        <h1 className="text-3xl">Core Team</h1>
+        <div
+          className="w-16
+         h-1 bg-green-500 mt-5 mb-4"
+        ></div>
+      </div>
       <Slider {...settings} className="mx-10">
-        {Testimonials.map((testimonial) => {
+        {Testimonials.map((testimonial, index) => {
           return (
-            <div className="w-80 h-[300px] md:h-80 space-y-4 bg-gray-100 px-4 py-8 rounded-lg relative">
+            <div
+              className="w-80 h-[300px] md:h-80 space-y-4 bg-gray-100 px-4 py-8 rounded-lg relative"
+              key={index}
+            >
               <Quote className="text-blue-600" />
               <div className="text-gray-600 text-sm lg:text-lg">
                 {testimonial.text}

@@ -22,6 +22,23 @@ import c19 from "../assets/c-19.png";
 import c20 from "../assets/c-20.png";
 import c21 from "../assets/c-21.png";
 
+import p1 from "../assets/p-1.png";
+import p2 from "../assets/p-2.png";
+import p3 from "../assets/p-3.jpg";
+import p4 from "../assets/p-4.png";
+import p5 from "../assets/p-5.png";
+import p6 from "../assets/p-6.png";
+import p7 from "../assets/p-7.jpg";
+import p8 from "../assets/p-8.jpg";
+import p9 from "../assets/p-9.jpg";
+import p10 from "../assets/p-10.png";
+import p11 from "../assets/p-11.jpg";
+import p12 from "../assets/p-12.jpg";
+import p13 from "../assets/p-13.jpg";
+import p14 from "../assets/p-14.jpg";
+import p15 from "../assets/p-15.jpg";
+import p16 from "../assets/p-16.jpg";
+
 export const LINKS = [
   {
     name: "Services",
@@ -177,4 +194,23 @@ export const CompanyImages = [
   c19,
   c20,
   c21,
+];
+
+export const PdfImages = [
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p8,
+  p9,
+  p10,
+  p11,
+  p12,
+  p13,
+  p14,
+  p15,
+  p16,
 ];

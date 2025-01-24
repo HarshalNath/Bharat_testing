@@ -48,7 +48,7 @@ const CompaniesLogo = () => {
       <div className="text-center mb-20 flex justify-center items-center flex-col">
         <h1 className="text-3xl">Trusted by Prominent Clientele</h1>
         <div
-          className="w-12
+          className="w-16
          h-1 bg-green-500 mt-5 mb-4"
         ></div>
         <p className="text-xl text-gray-500">
@@ -57,9 +57,9 @@ const CompaniesLogo = () => {
       </div>
 
       <Slider {...settings}>
-        {CompanyImages.map((img) => {
+        {CompanyImages.map((img, index) => {
           return (
-            <div className="">
+            <div className="" key={index}>
               <img
                 src={img}
                 alt=""

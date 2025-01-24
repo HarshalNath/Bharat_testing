@@ -43,7 +43,10 @@ const CompaniesMain = () => {
       <Slider {...settings}>
         {CompaniesMains.map((data, index) => {
           return (
-            <div className="  bg-gray-100  rounded-lg px-10 py-8 relative lg:relative md:space-y-4 h-[450px] lg:h-[350px]">
+            <div
+              className="  bg-gray-100  rounded-lg px-10 py-8 relative lg:relative md:space-y-4 h-[450px] lg:h-[350px]"
+              key={index}
+            >
               <div>
                 <h1 className="font-bold text-gray-700 text-lg">{data.name}</h1>
                 <h1 className="text-gray-500">{data.designation}</h1>
