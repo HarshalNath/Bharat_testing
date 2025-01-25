@@ -25,6 +25,7 @@ function TestingServices() {
             title={option.title}
             description={option.description}
             icon={option.icon}
+            link={option.link}
           />
         ))}
       </div>

@@ -5,10 +5,10 @@ export const footerSections = [
   },
   {
     title: "Contact",
-    content: "Blah blah blah",
+    content: "9899801211",
   },
   {
     title: "Location",
-    content: "blah blah blah",
+    content: "C- 63 Sector 88 Phase-II Noida Gautam Nagar Uttar Pradesh",
   },
 ];

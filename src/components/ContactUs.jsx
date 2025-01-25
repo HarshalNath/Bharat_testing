@@ -18,15 +18,17 @@ const ContactUs = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                <p className="text-gray-600">valsad 396001</p>
+                <p className="text-gray-600">
+                  C- 63 Sector 88 Phase-II Noida Gautam Nagar Uttar Pradesh
+                </p>
               </div>
               <div className="flex items-start space-x-3">
                 <Phone className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                <p className="text-gray-600">(123) 456-7890</p>
+                <p className="text-gray-600">9899801211</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                <p className="text-gray-600">info@bharattesting.com</p>
+                <p className="text-gray-600">info@btllab.in</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-6 h-6 text-blue-600 flex-shrink-0" />

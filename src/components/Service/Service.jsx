@@ -1,7 +1,128 @@
-import { h1 } from "framer-motion/client";
 import React from "react";
 import Navbar from "../Navigation/Navbar";
 import { Shield } from "lucide-react";
+
+import {
+  Beaker,
+  Droplet,
+  Pill as Pills,
+  Apple,
+  Microscope,
+  HeaterIcon as WaterIcon,
+  Sparkles,
+  FileSearch,
+  Factory,
+  Mountain,
+  Users,
+  Leaf,
+  GlassWater,
+  Waves,
+  Wind,
+  Home,
+  Gauge,
+  Sun,
+  Volume2,
+  TestTubes,
+} from "lucide-react";
+
+const services = [
+  {
+    icon: <FileSearch className="w-6 h-6 text-green-600" />,
+    name: "Baseline Surveys for EIA Reports",
+  },
+  {
+    icon: <Beaker className="w-6 h-6 text-green-600" />,
+    name: "Environmental Testing",
+  },
+  {
+    icon: <Pills className="w-6 h-6 text-green-600" />,
+    name: "Drug & Pharma Testing",
+  },
+  { icon: <Apple className="w-6 h-6 text-green-600" />, name: "Food Testing" },
+  {
+    icon: <Microscope className="w-6 h-6 text-green-600" />,
+    name: "Microbiological Testing",
+  },
+  {
+    icon: <WaterIcon className="w-6 h-6 text-green-600" />,
+    name: "BIS Approved Water Testing",
+  },
+  {
+    icon: <Sparkles className="w-6 h-6 text-green-600" />,
+    name: "Cosmetics Testing",
+  },
+  {
+    icon: <FileSearch className="w-6 h-6 text-green-600" />,
+    name: "Environmental Impact Assessment",
+  },
+  {
+    icon: <Factory className="w-6 h-6 text-green-600" />,
+    name: "Process Safety Study",
+  },
+  {
+    icon: <Droplet className="w-6 h-6 text-green-600" />,
+    name: "Ground Water Impact Assessment",
+  },
+  {
+    icon: <Mountain className="w-6 h-6 text-green-600" />,
+    name: "Mining Plan & Mines Safety Study",
+  },
+  {
+    icon: <Users className="w-6 h-6 text-green-600" />,
+    name: "Social Impact Assessment",
+  },
+  {
+    icon: <Leaf className="w-6 h-6 text-green-600" />,
+    name: "Ecology Biodiversity Studies",
+  },
+];
+
+const additionalServices = [
+  {
+    icon: <GlassWater className="w-6 h-6 text-green-600" />,
+    name: "Packaged Drinking Water",
+  },
+  {
+    icon: <Waves className="w-6 h-6 text-green-600" />,
+    name: "Waste Water – Effluent and Sewage",
+  },
+  {
+    icon: <Wind className="w-6 h-6 text-green-600" />,
+    name: "Ambient Air Quality",
+  },
+  {
+    icon: <Home className="w-6 h-6 text-green-600" />,
+    name: "Indoor Air Quality",
+  },
+  {
+    icon: <Gauge className="w-6 h-6 text-green-600" />,
+    name: "VOCs and Hydrocarbons",
+  },
+  {
+    icon: <Factory className="w-6 h-6 text-green-600" />,
+    name: "Fugitive Emission",
+  },
+  { icon: <Sun className="w-6 h-6 text-green-600" />, name: "Luminosity" },
+  {
+    icon: <Volume2 className="w-6 h-6 text-green-600" />,
+    name: "Ambient and Point Source Noise Monitoring",
+  },
+  {
+    icon: <TestTubes className="w-6 h-6 text-green-600" />,
+    name: "Microbiological testing",
+  },
+];
+
+function ServiceItem({ icon, name }) {
+  return (
+    <div className="flex items-center space-x-3 mb-4">
+      <div className="flex-shrink-0">{icon}</div>
+      <span className="text-gray-700 hover:text-green-600 transition-colors duration-200">
+        {name}
+      </span>
+    </div>
+  );
+}
 
 const Service = () => {
   return (
@@ -64,6 +185,43 @@ const Service = () => {
         </div>
       </section>
 
+      <section>
+        <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
+                Our Services
+              </h2>
+              <p className="text-lg text-gray-600">
+                Comprehensive environmental and safety testing solutions
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                {services.map((service, index) => (
+                  <ServiceItem
+                    key={index}
+                    icon={service.icon}
+                    name={service.name}
+                  />
+                ))}
+              </div>
+
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                {additionalServices.map((service, index) => (
+                  <ServiceItem
+                    key={index}
+                    icon={service.icon}
+                    name={service.name}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* benefit section */}
 
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
@@ -102,179 +260,3 @@ const Service = () => {
 };
 
 export default Service;
-
-// import React from 'react'
-// import { Button } from "/components/ui/button"
-// import { Card, CardContent, CardDescription, CardTitle } from "/components/ui/card"
-// import { Shield, Clock, Users } from "lucide-react"
-
-// export default function BloodTestsPage() {
-//   return (
-//     <div className="flex flex-col min-h-screen bg-white">
-//       {/* Header Section */}
-//       <header className="px-4 lg:px-6 h-14 flex items-center shadow-md">
-//         <a className="flex items-center justify-center" href="#">
-//           <Shield className="h-6 w-6 text-primary" />
-//           <span className="sr-only">Health Testing Lab</span>
-//         </a>
-//         <nav className="ml-auto flex gap-4 sm:gap-6">
-//           <a className="text-sm font-medium hover:underline underline-offset-4" href="#">
-//             Home
-//           </a>
-//           <a className="text-sm font-medium hover:underline underline-offset-4" href="#">
-//             Services
-//           </a>
-//           <a className="text-sm font-medium hover:underline underline-offset-4" href="#">
-//             About Us
-//           </a>
-//           <a className="text-sm font-medium hover:underline underline-offset-4" href="#">
-//             Contact
-//           </a>
-//           <Button>Book Now</Button>
-//         </nav>
-//       </header>
-
-//       {/* Hero Section */}
-//       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-100">
-//         <div className="container px-4 md:px-6 flex flex-col items-center justify-center text-center">
-//           <div className="space-y-4">
-//             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-//               Blood Tests
-//             </h1>
-//             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-//               Comprehensive blood tests to assess your overall health.
-//             </p>
-//           </div>
-//           <div className="space-x-4 mt-8">
-//             <Button>Book Your Test Today</Button>
-//             <Button variant="outline" href="/services">Back to Services</Button>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Detailed Services Section */}
-//       <section className="w-full py-12 md:py-24 lg:py-32">
-//         <div className="container px-4 md:px-6">
-//           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Comprehensive Blood Tests</h2>
-//           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//             <Card>
-//               <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-//                 <Shield className="h-12 w-12 text-primary" />
-//                 <CardTitle>Complete Blood Count (CBC)</CardTitle>
-//                 <CardDescription>Assesses your overall health and detects conditions like anemia, infections, and leukemia.</CardDescription>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-//                 <Clock className="h-12 w-12 text-primary" />
-//                 <CardTitle>Lipid Profile</CardTitle>
-//                 <CardDescription>Measures cholesterol levels to assess heart health and risk of heart disease.</CardDescription>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-//                 <Users className="h-12 w-12 text-primary" />
-//                 <CardTitle>Comprehensive Metabolic Panel (CMP)</CardTitle>
-//                 <CardDescription>Evaluates your liver, kidney, and electrolyte function, as well as blood sugar levels.</CardDescription>
-//               </CardContent>
-//             </Card>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Additional Information Section */}
-//       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
-//         <div className="container px-4 md:px-6">
-//           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Why Choose Our Blood Tests?</h2>
-//           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//             <Card>
-//               <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-//                 <Shield className="h-12 w-12 text-primary" />
-//                 <CardTitle>Accurate Results</CardTitle>
-//                 <CardDescription>Our state-of-the-art equipment ensures precise and reliable test results.</CardDescription>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-//                 <Clock className="h-12 w-12 text-primary" />
-//                 <CardTitle>Quick Turnaround</CardTitle>
-//                 <CardDescription>Receive your results within 24-48 hours, allowing for timely medical intervention.</CardDescription>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-//                 <Users className="h-12 w-12 text-primary" />
-//                 <CardTitle>Expert Staff</CardTitle>
-//                 <CardDescription>Our certified professionals provide accurate and compassionate care.</CardDescription>
-//               </CardContent>
-//             </Card>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Testimonials Section */}
-//       <section className="w-full py-12 md:py-24 lg:py-32">
-//         <div className="container px-4 md:px-6">
-//           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">What Our Patients Say</h2>
-//           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//             <Card>
-//               <CardContent className="p-6 space-y-2">
-//                 <p className="text-gray-500 dark:text-gray-400">
-//                   "The blood tests were quick and the results were accurate. I felt very comfortable with the staff."
-//                 </p>
-//                 <div className="flex items-center space-x-2">
-//                   <div className="bg-gray-200 border-2 border-dashed rounded-full w-12 h-12" />
-//                   <div>
-//                     <p className="font-medium">John Doe</p>
-//                     <p className="text-sm text-gray-500 dark:text-gray-400">Patient</p>
-//                   </div>
-//                 </div>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardContent className="p-6 space-y-2">
-//                 <p className="text-gray-500 dark:text-gray-400">
-//                   "I was impressed with the speed of the results and the friendly service. Highly recommend!"
-//                 </p>
-//                 <div className="flex items-center space-x-2">
-//                   <div className="bg-gray-200 border-2 border-dashed rounded-full w-12 h-12" />
-//                   <div>
-//                     <p className="font-medium">Jane Smith</p>
-//                     <p className="text-sm text-gray-500 dark:text-gray-400">Patient</p>
-//                   </div>
-//                 </div>
-//               </CardContent>
-//             </Card>
-//             <Card>
-//               <CardContent className="p-6 space-y-2">
-//                 <p className="text-gray-500 dark:text-gray-400">
-//                   "The staff was very knowledgeable and made me feel at ease during the process."
-//                 </p>
-//                 <div className="flex items-center space-x-2">
-//                   <div className="bg-gray-200 border-2 border-dashed rounded-full w-12 h-12" />
-//                   <div>
-//                     <p className="font-medium">Alice Johnson</p>
-//                     <p className="text-sm text-gray-500 dark:text-gray-400">Patient</p>
-//                   </div>
-//                 </div>
-//               </CardContent>
-//             </Card>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Footer Section */}
-//       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-//         <p className="text-xs text-gray-500 dark:text-gray-400">© 2023 Health Testing Lab. All rights reserved.</p>
-//         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-//           <a className="text-xs hover:underline underline-offset-4" href="#">
-//             Terms of Service
-//           </a>
-//           <a className="text-xs hover:underline underline-offset-4" href="#">
-//             Privacy
-//           </a>
-//         </nav>
-//       </footer>
-//     </div>
-//   )
-// }
